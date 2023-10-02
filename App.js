@@ -1,10 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Home from './screens/home';
+import Quiz from './screens/quiz';
+import Result from './screens/result';
+import MyStack from './navigation';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      {/* <Text>This is Quizzo Mania</Text> */}
+      {/* <Home /> */}
+      {/* <Quiz/> */}
+      {/* <Result/> */}
+      <NavigationContainer>
+        <MyStack/>
+      </NavigationContainer>
       <StatusBar style="auto" />
     </View>
   );
@@ -12,9 +25,12 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 50,
+    paddingLeft: 2,
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#EDE4FF',
+    
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
 });

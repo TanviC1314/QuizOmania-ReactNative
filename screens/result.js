@@ -5,7 +5,7 @@ import Title from '../components/title';
 const Result = ({navigation, route}) => {
   const {score} = route.params
 
-  const resultBanner= score>20?"https://cdn-icons-png.flaticon.com/256/7647/7647456.png":(score>10?"https://cdn-icons-png.flaticon.com/256/8777/8777946.png" :"https://cdn-icons-png.flaticon.com/256/8858/8858767.png")
+  const resultBanner= score>49?"https://cdn-icons-png.flaticon.com/256/7647/7647456.png":(score>10?"https://cdn-icons-png.flaticon.com/256/8777/8777946.png" :"https://cdn-icons-png.flaticon.com/256/8858/8858767.png")
   return (
     <View style={styles.container}>
 <Title titleText='RESULTS' />
